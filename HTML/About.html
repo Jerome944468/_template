@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: rgb(35, 22, 131);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 30px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+      color: #faf4f4;
+      text-decoration: none;
+    }
+
+    .nav-links-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 196px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .hero {
+      flex: 1;
+      min-height: calc(100vh - 80px);
+      background-image: url('images/aritsts.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+      padding: 0 100px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 73px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      line-height: 1.6;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="images/hehe.jpg" alt="SOUL Logo" class="logo-img" />
+      <div class="logo-text">SOUL</div>
+    </a>
+
+    <div class="nav-links-wrapper">
+      <div class="nav-links">
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Services.html">SERVICES</a>
+        <a href="Contacts.html">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">    
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>Finding Inspiration in Every Turn</p>
+      <p class="bold">Welcome to our music website, where we celebrate the vibrant world of sound rhythm. Our mission is to connect music lovers with the latest trends, artist features, and insightful reviews. Whether you're a seasoned audiophile or just discovering new genres, we provide a platform everyone to explore and share their passion for music. Join us on this melodic journey, and let's dive into the beats together!</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">SOUL</div>
+    <div class="footer-subtitle">Get in Touch</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Accessibility Statement</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Shipping Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: rgb(35, 22, 131);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 30px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+      color: #faf4f4;
+      text-decoration: none;
+    }
+
+    .nav-links-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 196px; /* Adjust this value for more or less space */
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .hero {
+      flex: 1;
+      min-height: calc(100vh - 80px);
+      background-image: url('images/aritsts.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: white;
+      text-align: left;
+      position: relative;
+      padding-left: 100px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 73px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      white-space: nowrap;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .explore-btn {
+      padding: 12px 30px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 30px;
+      font-size: 11.89px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .top-artist {
+      background-color: #1a113a;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .top-artist h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .artist-card {
+      background-color: #2c1b6c;
+      border-radius: 0;
+      overflow: hidden;
+    }
+
+    .artist-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="images/hehe.jpg" alt="SOUL Logo" class="logo-img" />
+      <div class="logo-text">SOUL</div>
+    </a>
+
+    <div class="nav-links-wrapper">
+      <div class="nav-links">
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Services.html">SERVICES</a>
+        <a href="Contacts.html">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Harmony and Rhythm</h1>
+      <p>Explore a Symphony of Choices</p>
+      <button class="explore-btn">Explore</button>
+    </div>
+  </section>
+
+  <section class="top-artist">
+    <h2>TOP ARTIST</h2>
+    <div class="artist-grid">
+      <div class="artist-card">
+        <img src="images/drake.jpg" alt="Artist 1" />
+      </div>
+      <div class="artist-card">
+        <img src="images/taylorswift.jpg" alt="Artist 2" />
+      </div>
+      <div class="artist-card">
+        <img src="images/thewekn.jpg" alt="Artist 3" />
+      </div>
+      <div class="artist-card">
+        <img src="images/billie.jpg" alt="Artist 4" />
+      </div>
+      <div class="artist-card">
+        <img src="images/bruno.jpg" alt="Artist 5" />
+      </div>
+      <div class="artist-card">
+        <img src="images/buny.jpg" alt="Artist 6" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">SOUL</div>
+    <div class="footer-subtitle">Get in Touch</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Accessibility Statement</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Shipping Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
